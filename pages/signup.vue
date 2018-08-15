@@ -4,7 +4,7 @@
       <form autocomplete="off" @submit.stop.prevent="handleSubmit">
         <div class="form-group">
           <label for="username">Username</label>
-          <b-form-input
+          <input
             id="username"
             v-model="username"
             type="username"
@@ -14,7 +14,7 @@
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <b-form-input
+          <input
             id="email"
             v-model="email"
             type="email"
@@ -24,7 +24,7 @@
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <b-form-input
+          <input
             id="password"
             v-model="password"
             label="password"

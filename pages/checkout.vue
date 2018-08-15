@@ -60,7 +60,7 @@
               <label for="card">Card</label>
               <card
                 class="form-control"
-                stripe="pk_test_4nobp9tCdjhXC4JPrmgqKnsk"
+                stripe="pk_test_IngCLTu9rvg3MZGc40jmhaOc"
               />
             </div>
             <button :disabled="loading" type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
@@ -121,7 +121,7 @@ export default {
       try {
         await strapi.createEntry('order', {
           amount: this.$store.getters['card/price'],
-          productes: this.$store.getters['card/items'],
+          products: this.$store.getters['card/items'],
           address: this.address,
           postalCode: this.postalCode,
           city: this.city,
